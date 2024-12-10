@@ -107,13 +107,13 @@ main {
 
 .main-img {
     height: 12rem;
-    width: 49%;
+    width: 50%;
     object-fit: contain;
     border-radius: 2rem;
 }
 
 .caption {
-    width: 49%;
+    width: 50%;
     font-family: sans-serif;
     font-size: medium;
     color: rgb(0, 0, 0);
