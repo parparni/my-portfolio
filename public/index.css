@@ -1,0 +1,444 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0%;
+    position: relative;
+}
+
+header {
+    height: max-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #a5a4a4;
+    border-left: 10pt solid rgb(114, 82, 0);
+    border-right: 10pt solid rgb(114, 82, 0);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    border-radius: 0px 0px 1pt 1pt;
+    position: fixed;
+}
+
+h5 {
+    font-family: sans-serif;
+    color: black;
+    margin: 0px 0px 0px 1px;
+    font-size: large;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.img-container {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    background-image: url("../public/My\ picture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(62, 45, 3);
+    box-shadow: 0px 0px 5rem rgb(204, 204, 204);
+    margin: 0%;
+    object-fit: cover;
+}
+
+.gridlines-container {
+    height: max-content;
+    width: max-content;
+    border: none;
+    background-color: white;
+}
+
+.gridlines {
+    height: 3pt;
+    width: 1.4rem;
+    border-radius: 100rem;
+    background-color: rgb(36, 26, 0);
+    display: block;
+    margin-top: 2px;
+}
+
+main {
+    padding: 3.5rem 2pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-image {
+    height: 15rem;
+    width: 100%;
+    background-image: url("./public/My\ picture.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(62, 45, 3);
+    margin: 0%;
+    z-index: -3;
+}
+
+.img-container-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5pt;
+    box-shadow: 0px 0px 2px rgb(228, 226, 226);
+    border-bottom: 3px solid rgb(250, 250, 250);
+    border-left: 2px solid rgb(94, 63, 1);
+    margin-bottom: 15pt;
+
+}
+
+.main-img {
+    height: 12rem;
+    width: 49%;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
+.caption {
+    width: 49%;
+    font-family: sans-serif;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption a {
+    height: max-content;
+    width: max-content;
+    display: block;
+    margin-top: 40px;
+    font-size: small;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 50rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 1ms;
+}
+
+.caption a:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.myskil {
+    font-family: sans-serif;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+
+.skill-desc {
+    font-family: sans-serif;
+    font-size: small;
+    display: block;
+}
+
+.skill-container,
+.why-me-container {
+    padding: 0px 5pt;
+}
+
+table {
+    width: 100%;
+    font-size: small;
+    position: relative;
+}
+
+tr>td:first-child {
+    border-left: 2px solid rgb(51, 38, 7);
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.fa-check {
+    color: green;
+}
+
+.why-me-text {
+    background-color: rgb(255, 255, 255);
+    font-size: small;
+    padding: 3pt;
+    border-radius: 3pt;
+    border-right: 15pt solid rgb(122, 93, 3);
+    box-shadow: 0px 0px 5px rgb(240, 240, 240);
+}
+
+.acc-btn {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: rgb(226, 234, 241);
+    outline: none;
+    padding: 5pt;
+    border: 1px solid white;
+}
+
+.fa-plus {
+    float: right;
+    color: rgb(122, 88, 0);
+}
+
+.panel, .panel.p{
+    margin-top: 5px;
+    font-size: small;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 0px;
+    padding: 0pt 5pt;
+} .pan{
+    display: block;
+} ul{
+  position: absolute;
+  right: 0%;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0px 0px 3px rgb(173, 173, 173);
+  border-radius: 5pt;
+  display: none;
+  padding: 5pt;
+} ul li{
+    padding: 0.5rem;
+    text-align: left;
+    list-style: none;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 3pt;
+    color: rgb(65, 46, 0);
+    transition: 5ms;
+} ul li:hover{
+    background-color: rgb(236, 236, 236);
+}
+ .contact-container{
+    margin-top: 1.5rem;
+    box-shadow: 0px 0px 2px rgb(122, 121, 121);
+    padding: 1rem;
+} input, textarea{
+    padding: 3pt;
+    width: 100%;
+    border-radius: 5pt;
+    outline-color: green;
+    font-family: sans-serif;
+    margin-top: 5pt;
+    height: 2rem;
+    border: 1px solid green;
+} textarea{
+    height: 100px;
+} a{
+    text-decoration-line: none;
+}
+
+
+
+
+footer {
+    height: max-content;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid rgb(221, 220, 220);
+    border-radius: 5pt 5pt 0pt 0pt;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1pt 0pt 0pt 0pt;
+    background-color: whitesmoke
+;
+}
+
+.home-icon-container {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-icon {
+    font-size: 1rem;
+    color: rgb(26, 19, 0);
+    background-color: rgb(235, 222, 188);
+    padding: 1pt 12pt;
+    border-radius: 50rem;
+    color: rgb(2, 112, 2);
+}
+
+.tool-tip {
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 3pt;
+    color: rgb(26, 19, 0);
+}
+
+.scroll-top-container {
+    position: relative;
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-top {
+    border: none;
+    background-color: rgb(235, 222, 188);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 35px;
+    font-size: medium;
+    color: rgb(2, 112, 2);
+    border-top: 1px solid rgb(163, 163, 163);
+}
+
+.scroll-top-p {
+    padding-top: 15pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+    height: 100%;
+}
+
+.img-body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.img-view-container {
+    width: 100%;
+    max-height: 50%;
+    background-image: url("../public/My\ picture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    background-clip: border-box;
+}
+
+.bck-img {
+    font-family: sans-serif;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15pt;
+    padding: 5pt 10pt;
+    background-color: white;
+    border-radius: 50rem;
+    transition: 10ms;
+    display: flex;
+    align-items: center;
+    gap: 5pt;
+    font-size: small;
+}
+
+.bck-img:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+.body {
+    font-family: sans-serif;
+}
+
+h4 {
+    background-color: aliceblue;
+    padding: .2rem;
+    margin: 0%;
+    border-left: 5pt solid rgb(133, 95, 0);
+    border-top: 5pt solid rgb(133, 95, 0);
+    border-bottom: 2pt solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back {
+    background-color: white;
+    float: right;
+    font-size: small;
+    padding: 0.3rem 1rem;
+    border-radius: 30rem;
+}
+
+.back:hover {
+    background-color: whitesmoke;
+}
+
+.abt-img-container {
+    height: 15rem;
+    width: 100%;
+    background-color: black;
+    margin-top: 5pt;
+    border-radius: 5ptm;
+}
+
+.abt-img-container>img {
+    object-fit: contain;
+}
+
+a {
+    color: inherit;
+}
+
+.abt-content {
+    padding: 0pt 5pt;
+    font-size: small;
+    font-family: sans-serif;
+} .abt-ul{
+    display: block;
+    position: inherit;
+    box-shadow: inherit;
+    font-size: smaller;
+} .abt-ul li{
+    display: flex;
+    justify-content: space-between;
+} .abt-ul li:hover{
+    background-color: whitesmoke;
+}
